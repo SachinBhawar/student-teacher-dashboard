@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import StudentsPage from "./pages/StudentsPage";
-import CoursesPage from "./pages/coursesPage";
+import CoursesPage from "./pages/CoursesPage";
 import TeachersPage from "./pages/TeachersPage";
 import NotFoundPage from "./pages/AssignCoursesPage";
 import EnrollStudents from "./pages/EnrollStudents";
