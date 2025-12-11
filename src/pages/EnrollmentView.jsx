@@ -17,12 +17,7 @@ const EnrollmentView = () => {
             ? student.enrolledCourses
                   .map((courseId) => {
                       const course = courses.find((c) => c.id === courseId);
-                      return course
-                          ? {
-                                ...course,
-                                teacher: getCourseTeacher(courseId),
-                            }
-                          : null;
+                      return course ? { ...course, teacher: getCourseTeacher(courseId) } : null;
                   })
                   .filter(Boolean)
             : [];
@@ -86,7 +81,7 @@ const EnrollmentView = () => {
 
                                 {enrollments.length > 0 ? (
                                     <div className="overflow-x-auto">
-                                        <table className="min-w-full divide-y divide-gray-200">
+                                        <table className="min-w-full table-fixed divide-y divide-gray-200">
                                             <thead className="bg-gray-50">
                                                 <tr>
                                                     <th className="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">
