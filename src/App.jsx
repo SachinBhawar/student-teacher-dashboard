@@ -8,6 +8,7 @@ import EnrollStudents from "./pages/EnrollStudents";
 import AssignCoursesPage from "./pages/AssignCoursesPage";
 import Navbar from "../src/components/NavBar";
 import HomePage from "./pages/HomePage";
+import EnrollmentView from "./pages/EnrollmentView";
 
 function App() {
     return (
@@ -22,7 +23,7 @@ function App() {
                 <Route path="/teachers" exact element={<TeachersPage />} />
                 <Route path="/courses" exact element={<CoursesPage />} />
                 <Route path="/assign-courses" exact element={<AssignCoursesPage />} />
-                <Route path="/enrollment-view" exact element={<EnrollStudents />} />
+                <Route path="/enrollment-view" exact element={<EnrollmentView />} />
 
                 {/* NotFoundPage would be rendered if an invalid route */}
                 <Route path="*" element={<NotFoundPage />} />
